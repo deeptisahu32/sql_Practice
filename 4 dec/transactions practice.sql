@@ -1,8 +1,8 @@
-/**
-how to enable and disble trigger
+
+--how to enable and disble trigger
 ----------------------------------
 
-Disable a Particular Trigger:
+--Disable a Particular Trigger:
 
 Syntax:
 
@@ -31,9 +31,9 @@ ALTER TABLE Employee ENABLE TRIGGER TR_Insert_Salary
 --------------------------------------------------------------------------
 
 
-Disable All Trigger of a table:
+--Disable All Trigger of a table:
 
-We can disable and enable all triggers of a table using previous query, but replacing the "ALL" instead of trigger name.
+--We can disable and enable all triggers of a table using previous query, but replacing the "ALL" instead of trigger name.
 
 Syntax:
 
@@ -50,7 +50,7 @@ ALTER TABLE Demo DISABLE TRIGGER ALL
 
 
  
-Enable All Trigger of a table:
+--Enable All Trigger of a table:
 
 Syntax:
 
@@ -63,9 +63,9 @@ ALTER TABLE Demo ENABLE  TRIGGER ALL
 
 -----------------------------------------------------------------------------
  
-Disable All Trigger for database:
+--Disable All Trigger for database:
 
-Using sp_msforeachtable system stored procedure we enable and disable all triggers for a database.
+--Using sp_msforeachtable system stored procedure we enable and disable all triggers for a database.
  
 Syntax: 
 
@@ -79,7 +79,7 @@ Exec sp_msforeachtable "ALTER TABLE ? DISABLE TRIGGER all"
 
 -----------------------------------------------------------------------------
  
-Enable All Trigger for database:
+--Enable All Trigger for database:
 
 Syntax:
 
@@ -106,7 +106,7 @@ EXEC sys.sp_settriggerorder @triggername = 'TRIGGER_SECOND',
    @stmttype = 'INSERT',  
    @namespace = NULL  
 
-**/
+
 
 ----------------------------------------------------------------
 -- insert of keyword and views
